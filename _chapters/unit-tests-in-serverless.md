@@ -53,30 +53,30 @@ import { expect, test } from "vitest";
 import { calculateCost } from "../util/cost";
 
 test("Lowest tier", () => {
-  const storage = 10;
+    const storage = 10;
 
-  const cost = 4000;
-  const expectedCost = calculateCost(storage);
+    const expectedCost = 4000;
+    const calculatedCost = calculateCost(storage);
 
-  expect(cost).toEqual(expectedCost);
+    expect(calculatedCost).toEqual(expectedCost);
 });
 
 test("Middle tier", () => {
-  const storage = 100;
+    const storage = 100;
 
-  const cost = 20000;
-  const expectedCost = calculateCost(storage);
+    const expectedCost = 20000;
+    const calculatedCost = calculateCost(storage);
 
-  expect(cost).toEqual(expectedCost);
+    expect(calculatedCost).toEqual(expectedCost);
 });
 
 test("Highest tier", () => {
-  const storage = 101;
+    const storage = 101;
 
-  const cost = 10100;
-  const expectedCost = calculateCost(storage);
+    const expectedCost = 10100;
+    const calculatedCost = calculateCost(storage);
 
-  expect(cost).toEqual(expectedCost);
+    expect(calculatedCost).toEqual(expectedCost);
 });
 ```
 
